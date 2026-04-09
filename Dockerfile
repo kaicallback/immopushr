@@ -9,7 +9,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -
 # copy application
 COPY . /app
 
-# specify volumes
-VOLUME /app/db
-
 ENTRYPOINT /app/entrypoint.sh
